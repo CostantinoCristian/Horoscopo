@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: silver;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center; /* Alineación centrada para todos los dispositivos */
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 5px; 
+}
+
+#img2 {
+    height: 200px;
+    width: 200px;
+    object-fit: inherit;
+    border-radius: 40%;
+}
+
+.horoscopo1, .horoscopo2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los hijos se envuelvan */
+}
+
+#div1, #div3 {
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35%;
+    background-color: beige;
+    border-radius: 30px;
+    border: double;
+    border-color: blueviolet;
+}
+
+#div2, #div4 {
+    margin: 3px;
+    padding: 25px;
+    background-color: bisque;
+    border-radius: 30px;
+    border: double;
+    border-color: blueviolet;
+    max-width: 65%; /* Controla el tamaño máximo */
+    flex: 1; /* Permite que tome el espacio restante */
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#signo {
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    max-width: 25%;
+    border: 2px dotted;
+    border-color: cadetblue;
+    border-radius: 30px;
+    background-color: darksalmon;
+    text-align: center;
+}
+
+.calculadora {
+    font-size: larger;
+    font-weight: bolder;
+    width: fit-content;
+    border: double;
+    border-color: crimson;
+    border-radius: 30px;
+    margin: 0 auto; /* Alineación centrada */
+    background-color: cornsilk;
+    padding: 2% 5%;
+}
+
+input {
+    margin: 10px;
+    border-radius: 5px;
+    border: groove;
+    padding: 5px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #div1, #div3 {
+        max-width: 100%;
+    }
+
+    #div2, #div4 {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .calculadora {
+        width: 90%; /* Asegúrate de que ocupe el 90% */
+    }
+
+    #signo {
+        max-width: 45%; /* Mayor espacio para los signos en móviles */
+    }
+}
